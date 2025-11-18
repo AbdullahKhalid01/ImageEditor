@@ -1,6 +1,9 @@
 PGM Image Editor Documentation
+
 Project Title: PGM Image Editor
-Objective: To create a C++ program that can read, manipulate, and save PGM (Portable Gray Map) images in both ASCII (P2) and Binary (P5) formats. The program supports image operations like flipping and rotation.
+
+Objective: 
+To create a C++ program that can read, manipulate, and save PGM (Portable Gray Map) images in both ASCII (P2) and Binary (P5) formats. The program supports image operations like flipping and rotation.
 
 Features: 
 1. Auto-detects the PGM format (ASCII or Binary) based on the magic number.
@@ -53,5 +56,6 @@ Notes:
 Authors:
 - Aila Kanwal 
 - Abdullah Khalid 
+
 Course: BSCS, PUCIT Lahore
 
