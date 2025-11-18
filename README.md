@@ -5,31 +5,36 @@ Objective: To create a C++ program that can read, manipulate, and save PGM (Port
 Features: 
 1. Auto-detects the PGM format (ASCII or Binary) based on the magic number.
 2. Supports dynamic memory allocation for images.
-3. Operations supported: - Flip Right - Flip Down - Rotate 90 degrees - Rotate 180 degrees - Rotate 270 degrees
-4. Saves the modified image in the same format as the input.
-5. Simple, clean interface for user interaction.
+3. Operations supported:
+   - Flip Right
+   - Flip Down
+   - Rotate 90 degrees
+   - Rotate 180 degrees
+   - Rotate 270 degrees
+5. Saves the modified image in the same format as the input.
+6. Simple, clean interface for user interaction.
 
 Program Structure:
 1.	Struct: Image
     Contains type (P2 or P5), width, height, maxVal, and dynamically allocated 2D array pixel.
 2.	Memory Management Functions:
-    allocate(Image &img): Allocates memory for the 2D pixel array.
-    freeMemory(Image &img): Frees allocated memory for the image.
+    - allocate(Image &img): Allocates memory for the 2D pixel array.
+    - freeMemory(Image &img): Frees allocated memory for the image.
 3.	File Handling Functions:
-    loadImage(string name, Image &img, bool &isBinary): Reads the PGM file, detects format, and loads the pixels.
-    saveImage(string name, Image &img, bool isBinary): Saves the image in either ASCII or Binary format.
+    - loadImage(string name, Image &img, bool &isBinary): Reads the PGM file, detects format, and loads the pixels.
+    - saveImage(string name, Image &img, bool isBinary): Saves the image in either ASCII or Binary format.
 4.	Image Manipulation Functions:
-    flipRight(Image &img): Flips the image horizontally.
-    flipDown(Image &img): Flips the image vertically.
-    rotate90(Image &img): Rotates the image 90 degrees clockwise.
-    rotate180(Image &img): Rotates the image 180 degrees.
-    rotate270(Image &img): Rotates the image 270 degrees clockwise.
+    - flipRight(Image &img): Flips the image horizontally.
+    - flipDown(Image &img): Flips the image vertically.
+    - rotate90(Image &img): Rotates the image 90 degrees clockwise.
+    - rotate180(Image &img): Rotates the image 180 degrees.
+    - rotate270(Image &img): Rotates the image 270 degrees clockwise.
 5.	main() function:
-    Displays menu for user to select operation.
-    Loads the image and detects format automatically.
-    Performs the selected operation.
-    Saves the modified image.
-    Repeats until user chooses to exit.
+    - Displays menu for user to select operation.
+    - Loads the image and detects format automatically.
+    - Performs the selected operation.
+    - Saves the modified image.
+    - Repeats until user chooses to exit.
 
 Usage Instructions: 
 1. Compile the program using a C++ compiler.
