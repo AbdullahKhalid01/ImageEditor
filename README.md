@@ -16,7 +16,7 @@ Features:
 
 Program Structure:
 1.	Struct: Image
-    Contains type (P2 or P5), width, height, maxVal, and dynamically allocated 2D array pixel.
+    - Contains type (P2 or P5), width, height, maxVal, and dynamically allocated 2D array pixel.
 2.	Memory Management Functions:
     - allocate(Image &img): Allocates memory for the 2D pixel array.
     - freeMemory(Image &img): Frees allocated memory for the image.
@@ -51,7 +51,7 @@ Notes:
 - Ensure the input PGM file has proper header format (magic number, width, height, max value).
 
 Authors:
-Aila Kanwal 
-Abdullah Khalid 
+- Aila Kanwal 
+- Abdullah Khalid 
 Course: BSCS, PUCIT Lahore
 
